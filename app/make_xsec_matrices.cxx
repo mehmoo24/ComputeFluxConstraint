@@ -10,11 +10,7 @@ int main(int argc, char *argv[]){
   TString flux_file = argv[1];
   TString output_path = argv[2];
   TString output_name = argv[3];
-//  measurement_file = argv[2];
-//  output_path = argv[3];
-//  output_name = argv[4];
 
-//  auto fluxFile = new TFile(flux_file, "READ");
  
   std::vector<double> bins = {0.8,2,3,5,7,9,20}; // Electron Energy Distribution
 
@@ -24,16 +20,12 @@ int main(int argc, char *argv[]){
   creator.SetupEeDistributions();
   creator.PopulateEeDistributions();
  
-//  auto star = creator.GetXSecMatrix(14);
-//  TFile ok("ok.root", "RECREATE");
-//  star->Write();
-//  ok.Close();
-
-  creator.GetNeutrinoEnergyBinning(14);
 
   // Ensure calling this AFTER LoadFluxHistos(), CreateXSecMatrices(), SetupEeDistributions()
 
   creator.WriteEverythingToROOTFile(output_path, output_name);
+
+
 
 /*
    std::cout << GetY(2,4) << std::endl;
