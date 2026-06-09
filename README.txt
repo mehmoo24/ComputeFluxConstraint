@@ -1,1 +1,1 @@
-We want to compute the electron energy distributions. First, we will take the binning
+We can determine the predicted electron energy distribution for each flux universe analytically. This is because we are given the cross section, and so we need to construct a matrix K once, which maps each neutrino energy bin to the different electron energy bins. 
