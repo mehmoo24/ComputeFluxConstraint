@@ -1,0 +1,11 @@
+Q1. Treatment of LE after email from Luis:
+
+The treatment of low energy is an important feature! Since the analysis cuts at 800 MeV, I only fitted the functions 
+in the range 500 MeV to 20 GeV, so the fit is valid below 800 MeV but not all the way down to 0. This was a simplifying 
+choice since the cross section changes more rapidly at those low energies, but we were not selecting those events. 
+Of course, you want to make sure you model the cross-section below the cut so that lateral errors are correct. So the 
+radiative correction code is not valid for lower energies than that, but could be expanded if needed, following the same 
+procedure.
+
+There is no maximum energy cut on the electron sample. The way it was coded was: if the energy was higher than 19 GeV, 
+that even goes into the last bin (the 9-infinity).
